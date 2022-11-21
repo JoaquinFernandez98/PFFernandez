@@ -1,0 +1,641 @@
+.containerTituloEmoji {display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+.emoji {
+    font-size: 3rem;
+    
+}
+.emoji:hover {
+    animation: agitar 0.5s;
+    
+}
+@keyframes agitar {
+    0% {
+        transform: translate(1px, 1px) rotate(0deg);
+    }
+    10% {
+        transform: translate(-1px, -2px) rotate(-1deg);
+    }
+    20% {
+        transform: translate(-3px, 0px) rotate(1deg);
+    }
+    30% {
+        transform: translate(3px, 2px) rotate(0deg);
+    }
+    40% {
+        transform: translate(1px, -1px) rotate(1deg);
+    }
+    50% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+    }
+    60% {
+        transform: translate(-3px, 1px) rotate(0deg);
+    }
+    70% {
+        transform: translate(3px, 1px) rotate(-1deg);
+    }
+    80% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+    }
+    90% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+    }
+}
+
+#cuerpoIndex{
+    margin-top: 100px;
+    margin-left: 75px;
+    display: grid;
+    
+    grid-template-areas:
+         
+        " queEs img10"
+        " dondeJuega dondeJuega"
+        " imgPerfiles imgPerfiles";
+
+    grid-template-rows: 3fr 1fr auto;  
+    grid-template-columns: 1fr 1fr auto;
+    grid-column-gap: 50px;
+    grid-row-gap: 50px;
+
+    #dondeJuega{
+        grid-area: dondeJuega;
+        background-color: rgb(10, 10, 103);
+        margin-left: 30px;
+        margin-right: 50px;
+        
+    }
+    #img10{
+        grid-area: img10;
+        display: flex;
+        margin-right: 50px;
+    }
+    
+    .perfiles{
+        width: 90%;
+        height: 350px;
+    }
+    
+    #imgPerfiles{
+        grid-area: imgPerfiles;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        margin-top: 30px;
+        margin-bottom: 100px;
+        margin-left: 30px;
+        
+    }
+    
+    #imgPerfiles:hover::before{
+        transform: scale(50%);
+    }
+    .mapa{
+     width: 75%;
+     height: 800px;
+    }
+    
+}
+
+/*-------------Contenido Pele---------------*/
+
+#cuerpoPele{
+    margin-top: 100px;
+    margin-left: 10px;
+    display: grid;
+    
+    grid-template-areas:
+         
+        " titlePele peleCopas"
+        " titlePele peleCopas"
+        " vidaPele vidaPele"
+        " videoPele videoPele"
+        " estadisticasPele estadisticasPele";
+
+        grid-template-rows: 1fr 1fr 1fr;  
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 50px;
+        grid-row-gap: 50px;
+
+    #titlePele{
+        grid-area: titlePele;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        flex-direction: column;
+        background-color: rgb(33, 5, 67);
+    }  
+
+    #peleCopas{
+        grid-area: peleCopas;
+        justify-content: center;
+        align-content: center;
+    }  
+    
+    .imgPele{
+        height: 350px;
+    }
+
+    #vidaPele{
+        grid-area: vidaPele;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        margin-right: 30px;
+    }  
+    
+    #videoPele{
+        grid-area: videoPele;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        width: 100%;
+    }  
+
+
+    #estadisticasPele{
+        grid-area: estadisticasPele;
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        margin-left: 8px;
+    }  
+
+    table{
+        width: 50%;
+        background-color: rgb(33, 5, 67);
+        text-align: left;
+        color: rgb(184, 245, 50);
+    }  
+}    
+
+/*--------------Contenido Diego-------------*/
+
+#cuerpoDiego{
+    margin-top: 100px;
+    margin-left: 75px;
+    display: grid;
+    
+    grid-template-areas:
+         
+        " titleDiego diegoCopas"
+        " titleDiego diegoCopas"
+        " vidaDiego vidaDiego"
+        " videoDiego videoDiego"
+        " estadisticasDiego estadisticasDiego";
+
+        grid-template-rows: 1fr 1fr 1fr;  
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 50px;
+        grid-row-gap: 50px;
+
+    #titleDiego{
+        grid-area: titleDiego;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        flex-direction: column;
+        background-color: rgb(87, 216, 225);
+    }  
+
+    #diegoCopas{
+        grid-area: diegoCopas;
+        justify-content: center;
+        align-content: center;
+    }  
+    
+    .imgDiego{
+        height: 350px;
+    }
+
+    #vidaDiego{
+        grid-area: vidaDiego;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        margin-right: 30px;
+    }  
+    
+    #videoDiego{
+        grid-area: videoDiego;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        width: 100%;
+    }  
+
+
+    #estadisticasDiego{
+        grid-area: estadisticasDiego;
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        margin-left: 8px;
+    }  
+
+    table{
+        width: 50%;
+        background-color: rgb(87, 216, 225);
+        text-align: left;
+        color: rgb(27, 28, 24);
+    }  
+}    
+
+/*---------------Contenido Messi---------------*/
+
+#cuerpoMessi{
+    margin-top: 100px;
+    margin-left: 75px;
+    display: grid;
+    
+    grid-template-areas:
+         
+        " titleMessi messiCopas"
+        " titleMessi messiCopas"
+        " vidaMessi vidaMessi"
+        " videoMessi videoMessi"
+        " estadisticasMessi estadisticasMessi";
+
+        grid-template-rows: 1fr 1fr 1fr;  
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 50px;
+        grid-row-gap: 50px;
+
+    #titleMessi{
+        grid-area: titleMessi;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        flex-direction: column;
+        background-color: rgb(36, 7, 86);
+    }  
+
+    #messiCopas{
+        grid-area: messiCopas;
+        justify-content: center;
+        align-content: center;
+    }  
+    
+    .imgMessi{
+        height: 350px;
+        width: 70%;
+    }
+
+    #vidaMessi{
+        grid-area: vidaMessi;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        margin-right: 30px;
+    }  
+    
+    #videoMessi{
+        grid-area: videoMessi;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        width: 100%;
+    }  
+
+
+    #estadisticasMessi{
+        grid-area: estadisticasMessi;
+        display: flex;
+        align-items: left;
+        justify-content: left;
+        margin-left: 8px;
+        flex-direction: column;
+    }  
+
+    table{
+        width: 50%;
+        background-color: rgb(36, 7, 86);
+        text-align: left;
+        color: rgb(239, 23, 23);
+    }  
+}    
+
+/*------------Jugadores retirados------------*/
+
+#cuerpoRetirados{
+    margin-top: 100px;
+    display: grid;
+    
+    grid-template-areas:
+         
+        " comoEran comoEran"
+        " jugRetirados jugRetirados"
+        " jugRetirados jugRetirados";
+
+
+    grid-template-rows: auto 1fr 1fr;  
+    grid-template-columns: 1fr auto;
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+
+    #comoEran{
+        grid-area: comoEran;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-direction: column;
+        margin-left: 15px;
+        margin-bottom: 10px;
+        
+    }  
+ 
+    
+
+    #jugRetirados{
+        grid-area: jugRetirados;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+        align-content: center;
+        background-color: rgb(165, 222, 247);
+    
+        .zidane{
+            position: relative;
+            display: inline-block;
+        }
+        .zidane1{
+            position: absolute;
+            top: 10px;
+            right: 50%;
+            font-size: 22px;
+            color: rgb(14, 13, 13);
+            background-color: #f1f1f1;
+        }
+        .zidane2{
+            position: absolute;
+            top: 20%;
+            left: 50%;
+            font-size: 16px;
+            text-shadow: -1px -1px 1px #000, 1px 1px 1px #000, -1px 1px 1px #000, 1px -1px 1px #000;
+            -webkit-text-fill-color: rgb(15, 13, 13);
+            -webkit-text-stroke: 1px rgb(146, 145, 145);
+            color: transparent;
+            background-color: rgba(255, 255, 255, 0.397)
+        }
+
+        .delPieroImg{
+            display: flex;
+            top: 50%;
+        }
+
+        .delPiero{
+            position: relative;
+            display: inline-block;
+        }
+        .delPiero1{
+            position: absolute;
+            top: 10px;
+            right: 40%;
+            font-size: 22px;
+            color: rgb(14, 13, 13);
+            background-color: #f1f1f1;
+        }
+        .delPiero2{
+            position: absolute;
+            top: 20%;
+            left: 50%;
+            font-size: 16px;
+            text-shadow: -1px -1px 1px #000, 1px 1px 1px #000, -1px 1px 1px #000, 1px -1px 1px #000;
+            -webkit-text-fill-color: rgb(15, 13, 13);
+            -webkit-text-stroke: 1px rgb(146, 145, 145);
+            color: transparent;
+            background-color: rgba(255, 255, 255, 0.397)
+        }
+
+        .zico{
+            position: relative;
+            display: inline-block;
+            display: flex;
+        }
+        .zico1{
+            position: absolute;
+            top: 10px;
+            right: 70%;
+            font-size: 22px;
+            color: rgb(14, 13, 13);
+            background-color: #f1f1f1;
+        }
+        .zico2{
+            position: absolute;
+            top: 20%;
+            left: 50%;
+            font-size: 16px;
+            text-shadow: -1px -1px 1px #000, 1px 1px 1px #000, -1px 1px 1px #000, 1px -1px 1px #000;
+            -webkit-text-fill-color: rgb(15, 13, 13);
+            -webkit-text-stroke: 1px rgb(146, 145, 145);
+            color: transparent;
+            background-color: rgba(255, 255, 255, 0.397)
+        }
+
+        .roman{
+            position: relative;
+            display: inline-block;
+            display: flex;
+        }
+        .roman1{
+            position: absolute;
+            top: 10px;
+            right: 30%;
+            font-size: 22px;
+            color: rgb(14, 13, 13);
+            background-color: #f1f1f1;
+        }
+        .roman2{
+            position: absolute;
+            top: 20%;
+            left: 50%;
+            font-size: 16px;
+            text-shadow: -1px -1px 1px #000, 1px 1px 1px #000, -1px 1px 1px #000, 1px -1px 1px #000;
+            -webkit-text-fill-color: rgb(15, 13, 13);
+            -webkit-text-stroke: 1px rgb(146, 145, 145);
+            color: transparent;
+            background-color: rgba(255, 255, 255, 0.397)
+        }
+
+        .dinho{
+            position: relative;
+            display: inline-block;
+            display: flex;
+        }
+        .dinho1{
+            position: absolute;
+            top: 10px;
+            right: 40%;
+            font-size: 22px;
+            color: rgb(14, 13, 13);
+            background-color: #f1f1f1;
+        }
+        .dinho2{
+            position: absolute;
+            top: 20%;
+            left: 50%;
+            font-size: 16px;
+            text-shadow: -1px -1px 1px #000, 1px 1px 1px #000, -1px 1px 1px #000, 1px -1px 1px #000;
+            -webkit-text-fill-color: rgb(15, 13, 13);
+            -webkit-text-stroke: 1px rgb(146, 145, 145);
+            color: transparent;
+            background-color: rgba(255, 255, 255, 0.397)
+        }
+
+        .baggio{
+            position: relative;
+            display: inline-block;
+            display: flex;
+        }
+        .baggio1{
+            position: absolute;
+            top: 10px;
+            right: 50%;
+            font-size: 22px;
+            color: rgb(14, 13, 13);
+            background-color: #f1f1f1;
+            
+        }
+        .baggio2{
+            position: absolute;
+            top: 20%;
+            left: 50%;
+            font-size: 16px;
+            text-shadow: -1px -1px 1px #000, 1px 1px 1px #000, -1px 1px 1px #000, 1px -1px 1px #000;
+            -webkit-text-fill-color: rgb(15, 13, 13);
+            -webkit-text-stroke: 1px rgb(146, 145, 145);
+            color: transparent;
+            background-color: rgba(255, 255, 255, 0.397)
+        }
+    }
+    }
+
+/*------------Contacto-------------*/
+
+.contact_form{  
+    width: 460px; 
+    height: auto;
+    margin: 80px auto;
+    border-radius: 10px;  
+    padding-top: 30px;
+    padding-bottom: 20px;  
+    background-color: #fafafa; 
+    padding-left: 30px; 
+  }
+  
+  
+  input{
+    background-color: #fafafa; 
+    width: 408px; 
+    height: 40px; 
+    border-radius: 5px;  
+    border-style: solid; 
+    border-width: 1px; 
+    border-color: coral; 
+    margin-top: 10px;  
+    padding-left: 10px;
+    margin-bottom: 20px; 
+  }
+  
+  
+  textarea{
+    background-color: #fafafa; 
+    width: 405px; 
+    height: 150px; 
+    border-radius: 5px;  
+    border-style: solid; 
+    border-width: 1px; 
+    border-color: coral; 
+    margin-top: 10px;  
+    padding-left: 10px;
+    margin-bottom: 20px; 
+    padding-top: 15px; 
+  }
+  
+  
+  label{
+    display: block; 
+    float: center;  
+  }
+  
+  
+  button{
+    height: 45px; 
+    padding-left: 5px;
+    padding-right: 5px;   
+    margin-bottom: 20px; 
+    margin-top: 10px;   
+    text-transform: uppercase;
+    background-color: coral; 
+    border-color: coral; 
+    border-style: solid; 
+    border-radius: 10px;  
+    width: 420px;   
+    cursor: pointer;
+  }
+  
+  
+  button p{
+    color: #fff; 
+  }
+  
+  
+  span{
+    color: coral; 
+  }
+  
+  
+  .aviso{
+    font-size: 13px;  
+    color: #0e0e0e;  
+  }
+  
+  
+  h1{
+    font-size: 39px;  
+    text-align: letf; 
+    padding-bottom: 20px; 
+    color: coral;
+  }
+  
+  
+  h3{
+    font-size: 16px; 
+    padding-bottom: 30px;
+    color: #0e0e0e;   
+  }
+  
+  
+  p{
+    font-size: 14px; 
+    color: #0e0e0e; 
+  }
+  
+  
+  ::-webkit-input-placeholder {
+   color: #a8a8a8;
+  }
+  
+  
+  ::-webkit-textarea-placeholder {
+   color: #a8a8a8;
+  }
+  
+  
+  .formulario input:focus{
+    outline:0;
+    border: 1px solid #97d848;
+  }
+  
+  
+  .formulario textarea:focus{
+    outline:0;
+    border: 1px solid #97d848;
+  }

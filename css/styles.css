@@ -1,0 +1,712 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+header {
+  max-width: 100%;
+  width: 100%;
+}
+
+body {
+  background-color: #fafafa;
+  font-family: "Roboto", sans-serif;
+}
+
+.nav-link {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: rgb(210, 210, 210);
+  font-size: 25px;
+}
+
+.colorFondo {
+  background-color: rgb(8, 8, 160);
+}
+
+.logo10 {
+  height: 90px;
+}
+
+main {
+  width: 100%;
+}
+main h1 {
+  color: coral;
+  margin-bottom: 15px;
+  margin-left: 15px;
+}
+main h2 {
+  color: coral;
+  margin-bottom: 15px;
+  margin-left: 15px;
+}
+main p {
+  color: rgb(119, 119, 119);
+  text-align: justify;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.containerTituloEmoji {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.emoji {
+  font-size: 3rem;
+}
+
+.emoji:hover {
+  animation: agitar 0.5s;
+}
+
+@keyframes agitar {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  90% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+}
+#cuerpoIndex {
+  margin-top: 100px;
+  margin-left: 75px;
+  display: grid;
+  grid-template-areas: " queEs img10" " dondeJuega dondeJuega" " imgPerfiles imgPerfiles";
+  grid-template-rows: 3fr 1fr auto;
+  grid-template-columns: 1fr 1fr auto;
+  grid-column-gap: 50px;
+  grid-row-gap: 50px;
+}
+#cuerpoIndex #dondeJuega {
+  grid-area: dondeJuega;
+  background-color: rgb(10, 10, 103);
+  margin-left: 30px;
+  margin-right: 50px;
+}
+#cuerpoIndex #img10 {
+  grid-area: img10;
+  display: flex;
+  margin-right: 50px;
+}
+#cuerpoIndex .perfiles {
+  width: 90%;
+  height: 350px;
+}
+#cuerpoIndex #imgPerfiles {
+  grid-area: imgPerfiles;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 100px;
+  margin-left: 30px;
+}
+#cuerpoIndex #imgPerfiles:hover::before {
+  transform: scale(50%);
+}
+#cuerpoIndex .mapa {
+  width: 75%;
+  height: 800px;
+}
+
+/*-------------Contenido Pele---------------*/
+#cuerpoPele {
+  margin-top: 100px;
+  margin-left: 10px;
+  display: grid;
+  grid-template-areas: " titlePele peleCopas" " titlePele peleCopas" " vidaPele vidaPele" " videoPele videoPele" " estadisticasPele estadisticasPele";
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 50px;
+  grid-row-gap: 50px;
+}
+#cuerpoPele #titlePele {
+  grid-area: titlePele;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: rgb(33, 5, 67);
+}
+#cuerpoPele #peleCopas {
+  grid-area: peleCopas;
+  justify-content: center;
+  align-content: center;
+}
+#cuerpoPele .imgPele {
+  height: 350px;
+}
+#cuerpoPele #vidaPele {
+  grid-area: vidaPele;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  margin-right: 30px;
+}
+#cuerpoPele #videoPele {
+  grid-area: videoPele;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+}
+#cuerpoPele #estadisticasPele {
+  grid-area: estadisticasPele;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  margin-left: 8px;
+}
+#cuerpoPele table {
+  width: 50%;
+  background-color: rgb(33, 5, 67);
+  text-align: left;
+  color: rgb(184, 245, 50);
+}
+
+/*--------------Contenido Diego-------------*/
+#cuerpoDiego {
+  margin-top: 100px;
+  margin-left: 75px;
+  display: grid;
+  grid-template-areas: " titleDiego diegoCopas" " titleDiego diegoCopas" " vidaDiego vidaDiego" " videoDiego videoDiego" " estadisticasDiego estadisticasDiego";
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 50px;
+  grid-row-gap: 50px;
+}
+#cuerpoDiego #titleDiego {
+  grid-area: titleDiego;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: rgb(87, 216, 225);
+}
+#cuerpoDiego #diegoCopas {
+  grid-area: diegoCopas;
+  justify-content: center;
+  align-content: center;
+}
+#cuerpoDiego .imgDiego {
+  height: 350px;
+}
+#cuerpoDiego #vidaDiego {
+  grid-area: vidaDiego;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  margin-right: 30px;
+}
+#cuerpoDiego #videoDiego {
+  grid-area: videoDiego;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+}
+#cuerpoDiego #estadisticasDiego {
+  grid-area: estadisticasDiego;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  margin-left: 8px;
+}
+#cuerpoDiego table {
+  width: 50%;
+  background-color: rgb(87, 216, 225);
+  text-align: left;
+  color: rgb(27, 28, 24);
+}
+
+/*---------------Contenido Messi---------------*/
+#cuerpoMessi {
+  margin-top: 100px;
+  margin-left: 75px;
+  display: grid;
+  grid-template-areas: " titleMessi messiCopas" " titleMessi messiCopas" " vidaMessi vidaMessi" " videoMessi videoMessi" " estadisticasMessi estadisticasMessi";
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 50px;
+  grid-row-gap: 50px;
+}
+#cuerpoMessi #titleMessi {
+  grid-area: titleMessi;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: rgb(36, 7, 86);
+}
+#cuerpoMessi #messiCopas {
+  grid-area: messiCopas;
+  justify-content: center;
+  align-content: center;
+}
+#cuerpoMessi .imgMessi {
+  height: 350px;
+  width: 70%;
+}
+#cuerpoMessi #vidaMessi {
+  grid-area: vidaMessi;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  margin-right: 30px;
+}
+#cuerpoMessi #videoMessi {
+  grid-area: videoMessi;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+}
+#cuerpoMessi #estadisticasMessi {
+  grid-area: estadisticasMessi;
+  display: flex;
+  align-items: left;
+  justify-content: left;
+  margin-left: 8px;
+  flex-direction: column;
+}
+#cuerpoMessi table {
+  width: 50%;
+  background-color: rgb(36, 7, 86);
+  text-align: left;
+  color: rgb(239, 23, 23);
+}
+
+/*------------Jugadores retirados------------*/
+#cuerpoRetirados {
+  margin-top: 100px;
+  display: grid;
+  grid-template-areas: " comoEran comoEran" " jugRetirados jugRetirados" " jugRetirados jugRetirados";
+  grid-template-rows: auto 1fr 1fr;
+  grid-template-columns: 1fr auto;
+  grid-column-gap: 5px;
+  grid-row-gap: 5px;
+}
+#cuerpoRetirados #comoEran {
+  grid-area: comoEran;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  margin-left: 15px;
+  margin-bottom: 10px;
+}
+#cuerpoRetirados #jugRetirados {
+  grid-area: jugRetirados;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-content: center;
+  background-color: rgb(165, 222, 247);
+}
+#cuerpoRetirados #jugRetirados .zidane {
+  position: relative;
+  display: inline-block;
+}
+#cuerpoRetirados #jugRetirados .zidane1 {
+  position: absolute;
+  top: 10px;
+  right: 50%;
+  font-size: 22px;
+  color: rgb(14, 13, 13);
+  background-color: #f1f1f1;
+}
+#cuerpoRetirados #jugRetirados .zidane2 {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  font-size: 16px;
+  text-shadow: -1px -1px 1px #000, 1px 1px 1px #000, -1px 1px 1px #000, 1px -1px 1px #000;
+  -webkit-text-fill-color: rgb(15, 13, 13);
+  -webkit-text-stroke: 1px rgb(146, 145, 145);
+  color: transparent;
+  background-color: rgba(255, 255, 255, 0.397);
+}
+#cuerpoRetirados #jugRetirados .delPieroImg {
+  display: flex;
+  top: 50%;
+}
+#cuerpoRetirados #jugRetirados .delPiero {
+  position: relative;
+  display: inline-block;
+}
+#cuerpoRetirados #jugRetirados .delPiero1 {
+  position: absolute;
+  top: 10px;
+  right: 40%;
+  font-size: 22px;
+  color: rgb(14, 13, 13);
+  background-color: #f1f1f1;
+}
+#cuerpoRetirados #jugRetirados .delPiero2 {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  font-size: 16px;
+  text-shadow: -1px -1px 1px #000, 1px 1px 1px #000, -1px 1px 1px #000, 1px -1px 1px #000;
+  -webkit-text-fill-color: rgb(15, 13, 13);
+  -webkit-text-stroke: 1px rgb(146, 145, 145);
+  color: transparent;
+  background-color: rgba(255, 255, 255, 0.397);
+}
+#cuerpoRetirados #jugRetirados .zico {
+  position: relative;
+  display: inline-block;
+  display: flex;
+}
+#cuerpoRetirados #jugRetirados .zico1 {
+  position: absolute;
+  top: 10px;
+  right: 70%;
+  font-size: 22px;
+  color: rgb(14, 13, 13);
+  background-color: #f1f1f1;
+}
+#cuerpoRetirados #jugRetirados .zico2 {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  font-size: 16px;
+  text-shadow: -1px -1px 1px #000, 1px 1px 1px #000, -1px 1px 1px #000, 1px -1px 1px #000;
+  -webkit-text-fill-color: rgb(15, 13, 13);
+  -webkit-text-stroke: 1px rgb(146, 145, 145);
+  color: transparent;
+  background-color: rgba(255, 255, 255, 0.397);
+}
+#cuerpoRetirados #jugRetirados .roman {
+  position: relative;
+  display: inline-block;
+  display: flex;
+}
+#cuerpoRetirados #jugRetirados .roman1 {
+  position: absolute;
+  top: 10px;
+  right: 30%;
+  font-size: 22px;
+  color: rgb(14, 13, 13);
+  background-color: #f1f1f1;
+}
+#cuerpoRetirados #jugRetirados .roman2 {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  font-size: 16px;
+  text-shadow: -1px -1px 1px #000, 1px 1px 1px #000, -1px 1px 1px #000, 1px -1px 1px #000;
+  -webkit-text-fill-color: rgb(15, 13, 13);
+  -webkit-text-stroke: 1px rgb(146, 145, 145);
+  color: transparent;
+  background-color: rgba(255, 255, 255, 0.397);
+}
+#cuerpoRetirados #jugRetirados .dinho {
+  position: relative;
+  display: inline-block;
+  display: flex;
+}
+#cuerpoRetirados #jugRetirados .dinho1 {
+  position: absolute;
+  top: 10px;
+  right: 40%;
+  font-size: 22px;
+  color: rgb(14, 13, 13);
+  background-color: #f1f1f1;
+}
+#cuerpoRetirados #jugRetirados .dinho2 {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  font-size: 16px;
+  text-shadow: -1px -1px 1px #000, 1px 1px 1px #000, -1px 1px 1px #000, 1px -1px 1px #000;
+  -webkit-text-fill-color: rgb(15, 13, 13);
+  -webkit-text-stroke: 1px rgb(146, 145, 145);
+  color: transparent;
+  background-color: rgba(255, 255, 255, 0.397);
+}
+#cuerpoRetirados #jugRetirados .baggio {
+  position: relative;
+  display: inline-block;
+  display: flex;
+}
+#cuerpoRetirados #jugRetirados .baggio1 {
+  position: absolute;
+  top: 10px;
+  right: 50%;
+  font-size: 22px;
+  color: rgb(14, 13, 13);
+  background-color: #f1f1f1;
+}
+#cuerpoRetirados #jugRetirados .baggio2 {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  font-size: 16px;
+  text-shadow: -1px -1px 1px #000, 1px 1px 1px #000, -1px 1px 1px #000, 1px -1px 1px #000;
+  -webkit-text-fill-color: rgb(15, 13, 13);
+  -webkit-text-stroke: 1px rgb(146, 145, 145);
+  color: transparent;
+  background-color: rgba(255, 255, 255, 0.397);
+}
+
+/*------------Contacto-------------*/
+.contact_form {
+  width: 460px;
+  height: auto;
+  margin: 80px auto;
+  border-radius: 10px;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  background-color: #fafafa;
+  padding-left: 30px;
+}
+
+input {
+  background-color: #fafafa;
+  width: 408px;
+  height: 40px;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: coral;
+  margin-top: 10px;
+  padding-left: 10px;
+  margin-bottom: 20px;
+}
+
+textarea {
+  background-color: #fafafa;
+  width: 405px;
+  height: 150px;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: coral;
+  margin-top: 10px;
+  padding-left: 10px;
+  margin-bottom: 20px;
+  padding-top: 15px;
+}
+
+label {
+  display: block;
+  float: center;
+}
+
+button {
+  height: 45px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  text-transform: uppercase;
+  background-color: coral;
+  border-color: coral;
+  border-style: solid;
+  border-radius: 10px;
+  width: 420px;
+  cursor: pointer;
+}
+
+button p {
+  color: #fff;
+}
+
+span {
+  color: coral;
+}
+
+.aviso {
+  font-size: 13px;
+  color: #0e0e0e;
+}
+
+h1 {
+  font-size: 39px;
+  text-align: letf;
+  padding-bottom: 20px;
+  color: coral;
+}
+
+h3 {
+  font-size: 16px;
+  padding-bottom: 30px;
+  color: #0e0e0e;
+}
+
+p {
+  font-size: 14px;
+  color: #0e0e0e;
+}
+
+::-webkit-input-placeholder {
+  color: #a8a8a8;
+}
+
+::-webkit-textarea-placeholder {
+  color: #a8a8a8;
+}
+
+.formulario input:focus {
+  outline: 0;
+  border: 1px solid #97d848;
+}
+
+.formulario textarea:focus {
+  outline: 0;
+  border: 1px solid #97d848;
+}
+
+footer {
+  width: 100%;
+  height: 50px;
+  margin-top: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer h2 {
+  font-size: 20px;
+}
+
+.redesSociales {
+  display: flex;
+  align-items: flex-end center;
+}
+
+.iconoRedes {
+  height: 30px;
+}
+
+/*------------Responsive-------------*/
+@media only screen and (min-width: 0px) and (max-width: 867px) {
+  footer {
+    width: 100%;
+  }
+  #cuerpoIndex {
+    grid-template-areas: " queEs" " dondeJuega" "imgPerfiles" "imgPerfiles" "imgPerfiles";
+    grid-template-rows: 2fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-content: center;
+  }
+  #queEs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    margin-left: 100px;
+    margin-right: 50px;
+  }
+  #dondeJuega {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    margin-left: 200px;
+  }
+  #imgPerfiles {
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    margin-left: 0%;
+    width: 5%;
+  }
+  #cuerpoPele {
+    grid-template-areas: " titlePele" " peleCopas" " vidaPele" " videoPele" " estadisticasPele";
+    grid-template-columns: 1fr;
+  }
+  #vidaPele {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    width: 100%;
+  }
+  #videoPele {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    width: 100%;
+  }
+  .imgPele {
+    width: 80%;
+  }
+  #cuerpoDiego {
+    grid-template-areas: " titleDiego" " diegoCopas" " vidaDiego" " videoDiego" " estadisticasDiego";
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-content: center;
+  }
+  #titleDiego {
+    margin-left: 0px;
+    margin-right: 0px;
+    align-content: center;
+  }
+  .imgDiego {
+    width: 80%;
+  }
+  #cuerpoMessi {
+    grid-template-areas: " titleMessi" " messiCopas" " vidaMessi" " videoMessi" " estadisticasMessi";
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-content: center;
+  }
+  #titleMessi {
+    margin-left: 0px;
+    margin-right: 30px;
+  }
+  #cuerpoRetirados {
+    margin-left: 10%;
+    max-width: 90%;
+    width: 65%;
+    margin-top: 100px;
+    display: grid;
+    grid-template-areas: " comoEran comoEran" " jugRetirados" " jugRetirados" " jugRetirados" " jugRetirados" " jugRetirados" " jugRetirados";
+    grid-template-columns: 1fr;
+  }
+  .containerContacto {
+    width: 60%;
+    margin-left: 25%;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 1024px) {
+  #imgPerfiles {
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
