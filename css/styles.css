@@ -139,7 +139,7 @@ main p {
 /*-------------Contenido Pele---------------*/
 #cuerpoPele {
   margin-top: 100px;
-  margin-left: 10px;
+  margin-left: 25px;
   display: grid;
   grid-template-areas: " titlePele peleCopas" " titlePele peleCopas" " vidaPele vidaPele" " videoPele videoPele" " estadisticasPele estadisticasPele";
   grid-template-rows: 1fr 1fr 1fr;
@@ -195,7 +195,7 @@ main p {
 /*--------------Contenido Diego-------------*/
 #cuerpoDiego {
   margin-top: 100px;
-  margin-left: 75px;
+  margin-left: 25px;
   display: grid;
   grid-template-areas: " titleDiego diegoCopas" " titleDiego diegoCopas" " vidaDiego vidaDiego" " videoDiego videoDiego" " estadisticasDiego estadisticasDiego";
   grid-template-rows: 1fr 1fr 1fr;
@@ -251,7 +251,7 @@ main p {
 /*---------------Contenido Messi---------------*/
 #cuerpoMessi {
   margin-top: 100px;
-  margin-left: 75px;
+  margin-left: 25px;
   display: grid;
   grid-template-areas: " titleMessi messiCopas" " titleMessi messiCopas" " vidaMessi vidaMessi" " videoMessi videoMessi" " estadisticasMessi estadisticasMessi";
   grid-template-rows: 1fr 1fr 1fr;
@@ -289,7 +289,6 @@ main p {
   display: flex;
   justify-content: center;
   align-content: center;
-  width: 100%;
 }
 #cuerpoMessi #estadisticasMessi {
   grid-area: estadisticasMessi;
@@ -331,7 +330,6 @@ main p {
   flex-wrap: wrap;
   align-content: center;
   justify-content: center;
-  align-content: center;
   background-color: rgb(165, 222, 247);
 }
 #cuerpoRetirados #jugRetirados .zidane {
@@ -539,7 +537,6 @@ button {
   width: 420px;
   cursor: pointer;
 }
-
 button p {
   color: #fff;
 }
@@ -571,20 +568,11 @@ p {
   color: #0e0e0e;
 }
 
-::-webkit-input-placeholder {
+::-webkit-input-placeholder, ::-webkit-textarea-placeholder {
   color: #a8a8a8;
 }
 
-::-webkit-textarea-placeholder {
-  color: #a8a8a8;
-}
-
-.formulario input:focus {
-  outline: 0;
-  border: 1px solid #97d848;
-}
-
-.formulario textarea:focus {
+.formulario input:focus, .formulario textarea:focus {
   outline: 0;
   border: 1px solid #97d848;
 }
@@ -610,10 +598,21 @@ footer h2 {
   height: 30px;
 }
 
-/*------------Responsive-------------*/
 @media only screen and (min-width: 0px) and (max-width: 867px) {
+  .logo10 {
+    width: 100%;
+  }
   footer {
     width: 100%;
+    flex-direction: column;
+    margin-top: 130px;
+  }
+  h2 {
+    font-size: 100%;
+  }
+  .redesSociales {
+    flex-direction: column;
+    justify-content: space-around;
   }
   #cuerpoIndex {
     grid-template-areas: " queEs" " dondeJuega" "imgPerfiles" "imgPerfiles" "imgPerfiles";
@@ -645,8 +644,10 @@ footer h2 {
     width: 5%;
   }
   #cuerpoPele {
-    grid-template-areas: " titlePele" " peleCopas" " vidaPele" " videoPele" " estadisticasPele";
+    grid-template-areas: " titlePele" " peleCopas" " vidaPele" " estadisticasPele";
     grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
   }
   #vidaPele {
     display: flex;
@@ -655,50 +656,89 @@ footer h2 {
     width: 100%;
   }
   #videoPele {
-    display: flex;
-    align-items: center;
-    justify-items: center;
+    display: none !important;
+  }
+  #estadisticasPele {
+    margin-left: 0px;
     width: 100%;
+    margin-right: 0px;
+    justify-content: center;
   }
   .imgPele {
-    width: 80%;
+    width: 100%;
   }
   #cuerpoDiego {
     grid-template-areas: " titleDiego" " diegoCopas" " vidaDiego" " videoDiego" " estadisticasDiego";
     grid-template-columns: 1fr;
     justify-content: center;
     align-content: center;
+    display: flex;
+    flex-direction: column;
   }
   #titleDiego {
     margin-left: 0px;
     margin-right: 0px;
+    width: 100%;
     align-content: center;
+  }
+  #estadisticasDiego {
+    margin-left: 0px;
+    width: 100%;
   }
   .imgDiego {
     width: 80%;
+  }
+  #videoDiego {
+    display: none !important;
   }
   #cuerpoMessi {
     grid-template-areas: " titleMessi" " messiCopas" " vidaMessi" " videoMessi" " estadisticasMessi";
     grid-template-columns: 1fr;
     justify-content: center;
     align-content: center;
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
   }
   #titleMessi {
     margin-left: 0px;
     margin-right: 30px;
+    width: 100%;
+  }
+  #estadisticasMessi {
+    margin-left: 0px;
+    width: 100%;
+  }
+  #videoMessi {
+    display: none !important;
   }
   #cuerpoRetirados {
-    margin-left: 10%;
     max-width: 90%;
-    width: 65%;
-    margin-top: 100px;
+    width: 100%;
+    margin-top: 10px;
     display: grid;
+    flex-direction: column;
+    margin-bottom: 150px;
     grid-template-areas: " comoEran comoEran" " jugRetirados" " jugRetirados" " jugRetirados" " jugRetirados" " jugRetirados" " jugRetirados";
     grid-template-columns: 1fr;
   }
-  .containerContacto {
-    width: 60%;
-    margin-left: 25%;
+  #jugRetirados {
+    width: 100%;
+  }
+  .contact_form {
+    width: 100%;
+  }
+  h1 {
+    font-size: 100%;
+  }
+  textarea {
+    width: 100%;
+  }
+  button {
+    width: 100%;
+  }
+  input {
+    width: 100%;
   }
 }
 @media only screen and (min-width: 0px) and (max-width: 1024px) {

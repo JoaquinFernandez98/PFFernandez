@@ -5,14 +5,31 @@
 @import "body";
 @import "footer";
 
-
-/*------------Responsive-------------*/
+$ancho: 100%;
 
 @media only screen and (min-width: 0px) and (max-width: 867px){
 
-    footer {
-        width: 100%;
+
+    .logo10{
+        width: $ancho;
+        
     }
+    
+    footer {
+        width: $ancho;
+        flex-direction: column;
+        margin-top: 130px;
+    }
+
+    h2 {
+        font-size: 100%;
+      }
+
+    .redesSociales {
+        flex-direction: column;
+        justify-content: space-around;
+      }
+
     #cuerpoIndex{
         grid-template-areas:
             " queEs"
@@ -60,12 +77,12 @@
            " titlePele"
            " peleCopas"
            " vidaPele"
-           " videoPele"
            " estadisticasPele";
 
             
         grid-template-columns: 1fr;
-        
+        display: flex;
+        flex-direction: column;
     }
     
     
@@ -74,17 +91,19 @@
         display: flex;
         align-items: center;
         justify-items: center;
-        width: 100%;
+        width: $ancho;
     }
     #videoPele{
-        display: flex;
-        align-items: center;
-        justify-items: center;
-        width: 100%;
+        display: none !important;
     }
-
+    #estadisticasPele{
+        margin-left: 0px;
+        width: $ancho;
+        margin-right: 0px;
+        justify-content: center;
+    }
     .imgPele{
-        width: 80%;
+        width: $ancho;
         
     }
 
@@ -100,20 +119,30 @@
         grid-template-columns: 1fr;
         justify-content: center;
         align-content: center;
+        display: flex;
+        flex-direction: column;
     }
     #titleDiego{
         
         margin-left: 0px;
         margin-right: 0px;
-        
+        width: $ancho;
         align-content: center;
         
     }
 
-    
+    #estadisticasDiego{
+        margin-left: 0px;
+        width: $ancho;
+    }
+
     .imgDiego{
         width: 80%;
         
+    }
+
+    #videoDiego{
+        display: none !important;
     }
 
     #cuerpoMessi{
@@ -128,25 +157,35 @@
         grid-template-columns: 1fr;
         justify-content: center;
         align-content: center;
+        display: flex;
+        flex-direction: column;
+        margin-left: 10px;
     }
     #titleMessi{
         margin-left: 0px;
         margin-right: 30px;
-        
+        width: $ancho;
     }
 
-    
+    #estadisticasMessi{
+        margin-left: 0px;
+        width: $ancho;
+    }
 
-    
+    #videoMessi{
+        display: none !important;
+    }
 
     #cuerpoRetirados{
     
-        margin-left: 10%;
-        max-width: 90%;
-        width: 65%;
-        margin-top: 100px;
-        display: grid;
         
+        max-width: 90%;
+        width: $ancho;
+        margin-top: 10px;
+        display: grid;
+        flex-direction: column;
+        margin-bottom: 150px;
+
         grid-template-areas:
              
             " comoEran comoEran"
@@ -158,13 +197,33 @@
             " jugRetirados";
      
         grid-template-columns: 1fr;
-           
+        
         }
     
-    .containerContacto{
-      width: 60%;
-      margin-left: 25%;
+    #jugRetirados{
+        width: $ancho;
+        
     }
+    .contact_form{
+      width: $ancho;
+      
+    }
+
+    h1{
+        font-size: 100%;
+    }
+    textarea{
+        width: $ancho;
+    }
+
+    button{
+        width: $ancho;
+    }
+
+    input{
+        width: $ancho;
+    }
+
 }
 
 

@@ -104,7 +104,7 @@
 
 #cuerpoPele{
     margin-top: 100px;
-    margin-left: 10px;
+    margin-left: 25px;
     display: grid;
     
     grid-template-areas:
@@ -177,7 +177,7 @@
 
 #cuerpoDiego{
     margin-top: 100px;
-    margin-left: 75px;
+    margin-left: 25px;
     display: grid;
     
     grid-template-areas:
@@ -250,7 +250,7 @@
 
 #cuerpoMessi{
     margin-top: 100px;
-    margin-left: 75px;
+    margin-left: 25px;
     display: grid;
     
     grid-template-areas:
@@ -300,7 +300,6 @@
         display: flex;
         justify-content: center;
         align-content: center;
-        width: 100%;
     }  
 
 
@@ -358,7 +357,6 @@
         flex-wrap: wrap;
         align-content: center;
         justify-content: center;
-        align-content: center;
         background-color: rgb(165, 222, 247);
     
         .zidane{
@@ -519,123 +517,102 @@
 
 /*------------Contacto-------------*/
 
-.contact_form{  
-    width: 460px; 
+.contact_form {
+    width: 460px;
     height: auto;
     margin: 80px auto;
-    border-radius: 10px;  
+    border-radius: 10px;
     padding-top: 30px;
-    padding-bottom: 20px;  
-    background-color: #fafafa; 
-    padding-left: 30px; 
+    padding-bottom: 20px;
+    background-color: #fafafa;
+    padding-left: 30px;
   }
   
-  
-  input{
-    background-color: #fafafa; 
-    width: 408px; 
-    height: 40px; 
-    border-radius: 5px;  
-    border-style: solid; 
-    border-width: 1px; 
-    border-color: coral; 
-    margin-top: 10px;  
+  input {
+    background-color: #fafafa;
+    width: 408px;
+    height: 40px;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: coral;
+    margin-top: 10px;
     padding-left: 10px;
-    margin-bottom: 20px; 
+    margin-bottom: 20px;
   }
   
-  
-  textarea{
-    background-color: #fafafa; 
-    width: 405px; 
-    height: 150px; 
-    border-radius: 5px;  
-    border-style: solid; 
-    border-width: 1px; 
-    border-color: coral; 
-    margin-top: 10px;  
+  textarea {
+    background-color: #fafafa;
+    width: 405px;
+    height: 150px;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: coral;
+    margin-top: 10px;
     padding-left: 10px;
-    margin-bottom: 20px; 
-    padding-top: 15px; 
+    margin-bottom: 20px;
+    padding-top: 15px;
   }
   
-  
-  label{
-    display: block; 
-    float: center;  
+  label {
+    display: block;
+    float: center;
   }
   
-  
-  button{
-    height: 45px; 
+  button {
+    height: 45px;
     padding-left: 5px;
-    padding-right: 5px;   
-    margin-bottom: 20px; 
-    margin-top: 10px;   
+    padding-right: 5px;
+    margin-bottom: 20px;
+    margin-top: 10px;
     text-transform: uppercase;
-    background-color: coral; 
-    border-color: coral; 
-    border-style: solid; 
-    border-radius: 10px;  
-    width: 420px;   
+    background-color: coral;
+    border-color: coral;
+    border-style: solid;
+    border-radius: 10px;
+    width: 420px;
     cursor: pointer;
+  
+    p {
+      color: #fff;
+    }
   }
   
-  
-  button p{
-    color: #fff; 
-  }
-  
-  
-  span{
-    color: coral; 
-  }
-  
-  
-  .aviso{
-    font-size: 13px;  
-    color: #0e0e0e;  
-  }
-  
-  
-  h1{
-    font-size: 39px;  
-    text-align: letf; 
-    padding-bottom: 20px; 
+  span {
     color: coral;
   }
   
+  .aviso {
+    font-size: 13px;
+    color: #0e0e0e;
+  }
   
-  h3{
-    font-size: 16px; 
+  h1 {
+    font-size: 39px;
+    text-align: letf;
+    padding-bottom: 20px;
+    color: coral;
+  }
+  
+  h3 {
+    font-size: 16px;
     padding-bottom: 30px;
-    color: #0e0e0e;   
+    color: #0e0e0e;
   }
   
-  
-  p{
-    font-size: 14px; 
-    color: #0e0e0e; 
+  p {
+    font-size: 14px;
+    color: #0e0e0e;
   }
   
-  
-  ::-webkit-input-placeholder {
-   color: #a8a8a8;
+  ::-webkit-input-placeholder, ::-webkit-textarea-placeholder {
+    color: #a8a8a8;
   }
   
-  
-  ::-webkit-textarea-placeholder {
-   color: #a8a8a8;
-  }
-  
-  
-  .formulario input:focus{
-    outline:0;
-    border: 1px solid #97d848;
-  }
-  
-  
-  .formulario textarea:focus{
-    outline:0;
-    border: 1px solid #97d848;
+  .formulario {
+    input:focus, textarea:focus {
+      outline: 0;
+      border: 1px solid #97d848;
+    }
   }
